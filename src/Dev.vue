@@ -1,6 +1,6 @@
 <template>
   <section class="d-flex justify-content-center align-items-center">
-    <dropdown class="dropdown">
+    <dropdown class="dropdown" tag="nav">
       <button class="btn btn-primary">Drop it Down</button>
 
       <dropdown-menu class="dropdown-menu show">

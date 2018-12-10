@@ -1,21 +1,21 @@
 <template>
   <section class="d-flex justify-content-center align-items-center">
-    <dropdown class="dropdown" tag="nav">
+    <toggle class="dropdown" tag="nav">
       <button class="btn btn-primary">Drop it Down</button>
 
-      <dropdown-menu class="dropdown-menu show">
+      <target class="dropdown-menu show">
         <li class="dropdown-item">Whats up!</li>
-      </dropdown-menu>
-    </dropdown>
+      </target>
+    </toggle>
   </section>
 </template>
 
 <script>
-import Dropdown from './Dropdown';
-import DropdownMenu from './DropdownMenu';
+import Toggle from './components/Toggle';
+import Target from './components/Target';
 
 export default {
-  components: {Dropdown, DropdownMenu},
+  components: {Toggle, Target},
 };
 </script>
 

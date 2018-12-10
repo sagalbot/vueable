@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: 'dropdown',
+  name: 'toggle',
   props: {
     tag: {
       type: String,
@@ -8,11 +8,11 @@ export default {
     },
   },
   data: () => ({
-    dropdown: null,
+    target: null,
   }),
   computed: {
     active () {
-      return this.dropdown ? this.dropdown.active : false;
+      return this.target ? this.target.active : false;
     },
   },
   watch: {
@@ -32,21 +32,17 @@ export default {
     }, this.$slots.default);
   },
   mounted () {
-    this.dropdown = this.$children.find(child => {
-      return child.$options.name === 'dropdown-menu';
+    this.target = this.$children.find(child => {
+      return child.$options.name === 'target';
     });
   },
   methods: {
-    toggle() {
-      return this.dropdown.toggle();
+    toggle () {
+      return this.target.toggle();
     },
     clickAway (event) {
-      if (!this.dropdown.active) {
-        return false;
-      }
-
       if (!event.composedPath().includes(this.$el)) {
-        this.dropdown.toggle(false);
+        this.target.toggle(false);
       }
     },
   },

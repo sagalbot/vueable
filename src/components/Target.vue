@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: 'dropdown-menu',
+  name: 'target',
   props: {
     tag: {
       type: String,
@@ -9,7 +9,7 @@ export default {
     display: {
       type: String,
       default: 'block',
-    }
+    },
   },
   data: () => ({
     active: false,
@@ -17,7 +17,7 @@ export default {
   render (h) {
     return h(this.tag, {
       style: {
-        display: this.active ? this.display : 'none',
+        display: this.active ? 'block' : 'none',
       },
     }, this.$slots.default);
   },

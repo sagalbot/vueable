@@ -17,6 +17,8 @@ export default {
   },
   watch: {
     active (val) {
+      this.$emit('change', {active: val});
+
       if (val) {
         return document.addEventListener('click', this.clickAway);
       } else {

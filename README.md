@@ -1,34 +1,10 @@
-# vue-dropdown
+# Vueable
 
-## Project setup
-```
-yarn install
-```
+> A featherweight (~1.5kb raw) set of Vue components for triggering 
+  Dropdowns, modals, or any other toggleable content. 
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
+# Install
 
-### Compiles and minifies for production
+```bash
+yarn add @sagalbot/vueable
 ```
-yarn run build
-```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Run your unit tests
-```
-yarn run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

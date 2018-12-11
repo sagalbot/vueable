@@ -30,7 +30,6 @@ export default {
       if (arguments.length) {
         return this.active = arguments[0];
       }
-
       this.active = !this.active;
     },
   },

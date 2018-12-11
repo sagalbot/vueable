@@ -1,10 +1,10 @@
 {
-  "name": "vue-dropdown",
-  "version": "0.1.0",
-  "private": true,
+  "name": "vueable",
+  "version": "0.0.1",
+  "main": "src/index.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve": "vue-cli-service serve ./dev/dev.js",
+    "build": "vue-cli-service build --target lib ./src/index.js",
     "lint": "vue-cli-service lint",
     "test:unit": "vue-cli-service test:unit"
   },
@@ -25,6 +25,7 @@
     "eslint-plugin-vue": "^5.0.0-0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
+    "vue-cli-plugin-webpack-bundle-analyzer": "^1.2.0",
     "vue-template-compiler": "^2.5.17"
   },
   "eslintConfig": {

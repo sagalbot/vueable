@@ -25,11 +25,21 @@ export default {
     },
   },
   render (h) {
+    let slot = this.$slots['default'];
+
+    if (this.$scopedSlots.hasOwnProperty('default')) {
+      slot = this.$scopedSlots.default({
+        active: this.active,
+        toggle: this.toggle,
+        clickAway: this.clickAway,
+      });
+    }
+
     return h(this.tag, {
       on: {
         click: this.toggle,
       },
-    }, this.$slots.default);
+    }, slot);
   },
   mounted () {
     this.target = this.$children.find(child => {
@@ -41,7 +51,8 @@ export default {
       return this.target.toggle();
     },
     clickAway (event) {
-      if (!event.composedPath().includes(this.$el)) {
+      const $el = arguments[1] ? arguments[1] : this.$el;
+      if (!event.composedPath().includes($el)) {
         this.target.toggle(false);
       }
     },

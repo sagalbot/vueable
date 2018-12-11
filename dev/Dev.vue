@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import Toggle from './components/Toggle';
-import Target from './components/Target';
+import Toggle from '../src/components/Toggle';
+import Target from '../src/components/Target';
 
 export default {
   components: {Toggle, Target},

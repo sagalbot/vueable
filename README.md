@@ -1,9 +1,10 @@
 # Vueable
 
-> A featherweight (~1.5kb raw) set of Vue components for triggering 
+![](https://img.shields.io/bundlephobia/min/@sagalbot/vueable.svg)
+![](https://img.shields.io/bundlephobia/minzip/@sagalbot/vueable.svg)
+
+> A lightweight set of Vue components for triggering 
   Dropdowns, modals, or any other toggleable content. 
-
-
 
 # Install
 

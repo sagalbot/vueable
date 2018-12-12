@@ -1,4 +1,3 @@
-<script>
 export default {
   name: 'target',
   props: {
@@ -34,4 +33,3 @@ export default {
     },
   },
 };
-</script>

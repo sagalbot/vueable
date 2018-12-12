@@ -1,4 +1,3 @@
-<script>
 export default {
   name: 'toggle',
   props: {
@@ -60,4 +59,3 @@ export default {
     },
   },
 };
-</script>

@@ -34,7 +34,7 @@ npm install --save @sagalbot/vueable
 
 The example below uses Bootstrap 4 classes to enable a dropdown.
 
-```
+```js
 import Vue from 'vue';
 import Vueable from '@sagalbot/vueable';
 

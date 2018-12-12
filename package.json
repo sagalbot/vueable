@@ -1,7 +1,7 @@
 {
   "name": "@sagalbot/vueable",
   "version": "0.0.3",
-  "main": "src/index.js",
+  "main": "dist/@sagalbot/vueable.umd.js",
   "scripts": {
     "serve": "vue-cli-service serve ./dev/dev.js",
     "build": "vue-cli-service build --target lib ./src/index.js",

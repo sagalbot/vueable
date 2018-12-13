@@ -2,11 +2,13 @@
   "name": "@sagalbot/vueable",
   "version": "0.0.3",
   "main": "dist/@sagalbot/vueable.umd.js",
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve ./dev/dev.js",
     "build": "vue-cli-service build --target lib ./src/index.js",
     "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit"
+    "test": "vue-cli-service test:unit",
+    "test:watch": "vue-cli-service test:unit --watch"
   },
   "dependencies": {},
   "peerDependencies": {
@@ -28,7 +30,7 @@
     "sass-loader": "^7.0.1",
     "vue": "^2.5.21",
     "vue-cli-plugin-webpack-bundle-analyzer": "^1.2.0",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.5.21"
   },
   "eslintConfig": {
     "root": true,
@@ -55,6 +57,12 @@
     "not ie < 11"
   ],
   "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/components/*.{js,jsx}",
+      "!**/node_modules/**"
+    ],
+    "coverageReporters": ["text"],
     "moduleFileExtensions": [
       "js",
       "jsx",

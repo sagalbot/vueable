@@ -1,5 +1,6 @@
 # Vueable
 
+![](https://img.shields.io/travis/sagalbot/vueable.svg)
 ![](https://img.shields.io/bundlephobia/min/@sagalbot/vueable.svg)
 ![](https://img.shields.io/bundlephobia/minzip/@sagalbot/vueable.svg)
 
